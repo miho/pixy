@@ -62,11 +62,11 @@ extern "C"
           if (flag)
             sig[j++] = d + '0';
         }
-        sig[j] = '\0';	
-        sprintf(buf, "CC block! sig: %s (%d decimal) x: %d y: %d width: %d height: %d angle %d", sig, signature, x, y, width, height, angle);
+        sig[j] = '\0';
+        sprintf(buf, "CC block! sig: %s (%d decimal); x: %d; y: %d; width: %d; height: %d; angle %d", sig, signature, x, y, width, height, angle);
       }
       else // regular block.  Note, angle is always zero, so no need to print
-        sprintf(buf, "sig: %d x: %d y: %d width: %d height: %d", signature, x, y, width, height);		
+        sprintf(buf, "sig: %d; x: %d; y: %d; width: %d; height: %d", signature, x, y, width, height);
     }
 
     uint16_t type;
